@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>iIcon RSS Feed</title>
+        <link>http://slovak-cat.github.io/iicon</link>
+        <description>Feed of all system icons of Apple ecosystem</description>
+        <generator>Feeder 3 3.7.2(3302); Mac OS X Version 10.15.3 (Build 19D76) http://reinventedsoftware.com/feeder/</generator>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <language>en</language>
+        <pubDate>Wed, 08 Apr 2020 22:57:33 +0200</pubDate>
+        <lastBuildDate>Wed, 08 Apr 2020 22:57:33 +0200</lastBuildDate>
+        <item>
+            <title>Hello world! (said iIcon)</title>
+            <link>http://slovak-cat.github.io/iicon</link>
+            <description><![CDATA[<p><img src="https://slovak-cat.github.io/iicon/bigfavicon.png" alt="iIcon"/>
+<br />iIcon repo was created by slovak_cat</p>]]></description>
+            <author>Slovak_Cat@boun.cr</author>
+            <pubDate>Wed, 08 Apr 2020 17:12:00 +0200</pubDate>
+            <guid isPermaLink="false">D4D147AC-98BD-4554-958F-1A758C29B130</guid>
+        </item>
+    </channel>
+</rss>
