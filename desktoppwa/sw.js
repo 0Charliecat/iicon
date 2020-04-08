@@ -1,15 +1,14 @@
-var cacheName = 'hello-world-page';
+var cacheName = 'iiconcache';
 var filesToCache = [
   '/',
-  '/index.html',
-  '/hello-world.css'
+  '/index.html'
 ];
 
 self.addEventListener('install', function(e) {
-  console.log('[ServiceWorker] Install');
+  console.log('[Slovak_Cat"s Cat"s ServiceWorker] Install');
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      console.log('[ServiceWorker] Caching app shell');
+      console.log('[Slovak_Cat"s Cat"s ServiceWorker] Caching app shell');
       return cache.addAll(filesToCache);
     })
   );
