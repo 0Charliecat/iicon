@@ -1,7 +1,8 @@
 var cacheName = 'iiconcache';
 var filesToCache = [
-  '/',
-  '/index.html'
+  '/iicon',
+  'iicon/index.html',
+  'iicon/bigfavicon.png',
 ];
 
 self.addEventListener('install', function(e) {
