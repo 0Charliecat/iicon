@@ -9,6 +9,15 @@
        <meta name="theme-color" content="#000000" />
        <link rel="manifest" href="desktoppwa/manifest.json">
        <meta name="apple-mobile-web-app-capable" content="yes">
+       <script>
+         if ('serviceWorker' in navigator){
+           window.addEventListener('load', () => {
+              navigator.serviceWorker.register('./desktoppwa/sw.js')
+           .then(() => { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+          });
+        }
+       </script>
+       
     <!-- end PWA -->
     
 
