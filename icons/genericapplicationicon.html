@@ -2,7 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>iIcon: GenericApplicationIcon</title>
+    <link rel="alternate" href="../feed.xml" type="application/rss+xml" title="iIcon RSS">
+    
+    <!-- PWA -->
+       <meta name="theme-color" content="#000000" />
+       <link rel="manifest" href="../desktoppwa/manifest.json">
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <script>
+         if ('serviceWorker' in navigator){
+           window.addEventListener('load', () => {
+              navigator.serviceWorker.register('../desktoppwa/sw.js')
+           .then(() => { console.log('[ Slovak_Cat"s Cat ] Service Worker Registered'); });
+          });
+        }
+       </script>
+       
+    <!-- end PWA -->
 
     <style>
       /* Custom normalize.css (only for <sub>/<sup> appearence) */
