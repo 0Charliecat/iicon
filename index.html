@@ -81,7 +81,7 @@
 
 
   </head>
-  <body class="markdown-body wysiwyg-content">
+  <body class="markdown-body wysiwyg-content" onmousedown="isKeyPressed(event)" >
     <!-- __themename: GitHub Style -->
     <!-- __authorname: n457 -->
 
@@ -152,17 +152,16 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
 
 })();
 
-
-   
-var keycat = event.key;
-
-// If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
-
-if (x == "e" || x == "E") {
-  alert ("say waaaaaaaat! and press ok");
-  location.href='https://www.youtube.com/embed/CU20XJ7z9aE';
-  console.log('Starting EasterEgg');
+function isKeyPressed(event) {
+  if (event.altKey) {
+    alert ("say waaaaaaaat! and press ok");
+    location.href='https://www.youtube.com/embed/CU20XJ7z9aE';
+    console.log('Starting EasterEgg');;
+  } else {
+    console.log("🐈!");
+  }
 }
+   
     </script>
   </body>
 </html>
