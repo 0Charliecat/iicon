@@ -61,6 +61,7 @@
        <meta name="theme-color" content="#ffffff" />
        <link rel="manifest" href="https://slovak-cat.github.io/iicon/desktoppwa/manifest.json"> <!-- Some how it don't work on Safary beta without link-->
        <meta name="apple-mobile-web-app-capable" content="yes">
+       <!-- __authorname: n457 -->
        <script>
          if ('serviceWorker' in navigator){
            window.addEventListener('load', () => {
@@ -82,19 +83,19 @@
 
 
   </head>
-  <body class="markdown-body wysiwyg-content" onmousedown="isKeyPressed(event)" onkeydown="isKeyPressed(event)" >
+  <body class="markdown-body wysiwyg-content" onkeydown="altKey" >
     <!-- __themename: GitHub Style -->
-    <!-- __authorname: n457 -->
+    <!-- __themeautor: n457-->
 
+    <img src="./bigfavicon.webp" onclick="location.href='https://www.youtube.com/embed/WNOl71hB1es'">
     <main>
       <h1 id=""></h1>
-          <img src="./bigfavicon.webp" onclick="location.href='https://www.youtube.com/embed/WNOl71hB1es'">
       <p>&nbsp;The repo of Apple system icons.</p>
 
       
       <!-- Menu {BETA} -->
-      <h8> Menu {BETA}</h8>
       <h1 id="home-screen-categories-all-submit-a-icon">
+      <h8> Menu {BETA}</h8>
         <a  target="_blank"> 🏡 Home Screen</a> 
         <a  target="_blank" onclick="location.href='./c.html'"> 🔳 Categories</a> 
         <a  target="_blank" onclick="location.href='./all.html'"> 📂 All</a> 
@@ -151,35 +152,7 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
 // Patrik ide na slovak-cat.github.io/iicon/patrik
       (function () {
 
-})();
-
-function isKeyPressed(event) {
-  if (event.altKey) {
-    alert ("say waaaaaaaat! and press ok");
-    location.href='https://forms.gle/gVu5wWhwAq3SQcRG8';
-    console.log('Starting EasterEgg');;
-  } else {
-    console.log("🐈! try it with alt key and click");
-  }
-}
-
-
-function isKeyPressed(event) {
-  if (event.ctrlKey) {
-    location.href='./c.html';
-  } else {
-    console.log("Not Ctrl presed");
-  }
-}
-
-function isKeyPressed(event) {
-  if (event.megaKey) {
-    location.href='./c.html';
-  } else {
-    console.log("Not Ctrl presed");
-  }
-}
-   
+})();   
     </script>
   </body>
 </html>
