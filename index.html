@@ -126,20 +126,20 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
   // Checking for an Internet connection
   // From http://youmightnotneedjquery.com/#request
   // i want great experience for users
-  var Request = new XMLHttpRequest();
+  //var Request = new XMLHttpRequest();
   // Load a tiny library from a reliable source to check if a real Internet connexion is available (like google api).
-  Request.open('GET', 'https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min.js', true);
-  Request.onreadystatechange = function () {
-    if (this.readyState === 4) {
-      if (this.status >= 200 && this.status < 400) {
+  //Request.open('GET', 'https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min.js', true);
+  //Request.onreadystatechange = function () {
+    //if (this.readyState === 4) {
+      //if (this.status >= 200 && this.status < 400) {
         // End of downloading small libary
-      } else {
-        alert('Some how there is no Internet connexion. Some ressources may not load, like images of cats.');
-      }
-    }
-  };
-  Request.send();
-  Request = null;
+      //} else {
+        //alert('Some how there is no Internet connexion. Some ressources may not load, like images of cats.');
+      //}
+    //}
+  //};
+  //Request.send();
+  //Request = null;
 
 
   // Executing highlight.js if there is at least one <pre>
