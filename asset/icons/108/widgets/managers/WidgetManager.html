@@ -16,18 +16,18 @@ license or right is granted, either expressly or by implication, by Apple.
 	<style type="text/css" title="AppleStyle">
 		@import "WidgetManager.css";
 	</style>
-    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
-    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
-	<script type='text/javascript' src='localizedStrings.js' charset='utf-8'></script>
-	<script type='text/javascript' src='button.js' charset='utf-8'></script>
-	<script type='text/javascript' src='dialog_button.js' charset='utf-8'></script>
-	<script type='text/javascript' src='WidgetManager.js' charset='utf-8'></script>
+    <!--<script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>-->
+    <!--<script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>-->
+	<script type='text/javascript' src='./localizedStrings.js' charset='utf-8'></script>
+	<script type='text/javascript' src='./button.js' charset='utf-8'></script>
+	<script type='text/javascript' src='./dialog_button.js' charset='utf-8'></script>
+	<script type='text/javascript' src='./WidgetManager.js' charset='utf-8'></script>
 </head>
 <body onload='load();'>
 
 	<div id='top'>
-		<img id='close-box' src='Images/close_normal.png' onmousedown='close_mouse_down_handler(event, this);'>
-		<img id='sort-popup' src='Images/popup.png'>
+		<img id='close-box' src='./Images/close_normal.png' onmousedown='close_mouse_down_handler(event, this);'>
+		<img id='sort-popup' src='./Images/popup.png'>
 		<div id='sort-popup-text'></div>
 		<select id='sort-select' onchange='sort_popup_changed(event, this);'></select>
 		<div id='disable-help'></div>
@@ -49,7 +49,7 @@ license or right is granted, either expressly or by implication, by Apple.
 	
 	<div id='bottom'>
 		<div id='more-widget-button'></div>
-		<img id='resize' src='Images/resize.png'>
+		<img id='resize' src='./Images/resize.png'>
 		<div id='resize-event-helper' onmousedown='resize_mouse_down_handler(event, this);'></div>
 	</div>
             
