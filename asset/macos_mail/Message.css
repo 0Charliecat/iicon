@@ -1,0 +1,55 @@
+/*
+ *  Message.css
+ *  Mail
+ *
+ *  Copyright (c) 2012 Apple Inc. All rights reserved.
+ */
+
+body {
+    margin: 15px 25px;
+}
+
+body.ApplePlainTextBody {
+    -webkit-nbsp-mode: space;
+    font-size: @[PLAIN_TEXT_FONT_SIZE]px;
+    font-family: @[PLAIN_TEXT_FONT_NAME];
+}
+
+.x-apple-maildropbanner {
+    display: none;
+}
+
+blockquote[type=cite] {
+    padding-left: 8px;
+    margin: 0;
+    border-left: 2px solid @[QUOTE_BAR_COLOR_LVL1_RGB];
+    color: @[QUOTE_TEXT_COLOR_LVL1_RGB];
+}
+
+blockquote[type=cite] blockquote[type=cite] {
+    border-left: 2px solid @[QUOTE_BAR_COLOR_LVL2_RGB];
+    color: @[QUOTE_TEXT_COLOR_LVL2_RGB];
+}
+
+blockquote[type=cite] blockquote[type=cite] blockquote[type=cite] {
+    border-left: 2px solid @[QUOTE_BAR_COLOR_LVL3_RGB];
+    color: @[QUOTE_TEXT_COLOR_LVL3_RGB];
+}
+
+img.Apple-edge-to-edge-visual-media, video.Apple-edge-to-edge-visual-media {
+    display: block;
+    max-width: calc(100% + 50px) !important;
+    margin: 0 -25px;
+}
+
+#AppleExclusionRect {
+    clear: both;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
